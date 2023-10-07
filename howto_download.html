@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/general.css?v=3.1.5">
+  
+  <!-- Navbar header -->
+  <script src="components/header.js" type="text/javascript" defer></script>
+
+  <title>ut4ever.org</title>
+</head>
+
+<body style="padding-bottom: 300px;">
+
+  <!-- Header bar (logo/title and nav bar) -->
+  <header-component></header-component> 
+
+  <!--
+    Main section, how to download and install UT4
+    Table of contents included in this card
+  -->
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header pb-1"><h6 style="color:rgb(220, 220, 220);">How to download and install UT4</h6></div>
+
+      <!--Troubleshooting warning-->
+      <div class="card-body card-body-post-a p-2 pb-1">        
+        <div class="card-body m-0 p-1 border border-light-subtle rounded-2 card-sectiontitle-bgdark mb-1" style="width:fit-content;">
+          <p class="card-text card-body-post-subtextcolor pb-1 ps-1 pe-1">
+            <i class="bi-exclamation-triangle fs-5 px-1"></i>
+            See the troubleshooting section at the bottom for addressing game startup errors related to 
+            <span style="color: rgb(204, 158, 31);">CorsairRGB</span> and 
+            <span style="color: rgb(204, 158, 31);">INPUT1_3.dll / DirectX</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 1: Download game files</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Download UnrealTournament.zip</p>
+        <ul class="mb-0">
+          <li style="padding-top: 5px" class="card-text pb-2">Try out the UT4 installer! - <a href="downloads" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+            More info here</a></li>
+          <li class="card-text">or <a id="stockGameUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+                    click here for a download link
+                </a> that requires manual installation
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 2: Install the game</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Unzip UnrealTournament.zip</p>
+        <p class="card-text mb-1">b. Place unzipped contents in your desired install location</p>
+        <ul class="card-text mb-0">
+          <li>Common path: <span class="bg-dark card-body-post-subtextcolor">"C:\Program Files\UnrealTournament"</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 3: Bypass Epic Games Launcher</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-3">
+          <u>You have two options here to bypass the Epic Games Launcher (a OR b, don't do both):</u>
+        </p>
+        <p class="card-text mb-1">a. Install UT4UU (Unofficial Patch) - v10.1.6 &nbsp; *recommended</p>
+          <ul class="card-text mb-4">
+            <li><a id="latestUuUrl"
+              class="card-body-post-subtextcolor card-body-post-subtitle-link">
+              Click here for UT4UU download link</a></li>
+            <li>Unzip and install using included installer: <span class="bg-dark card-body-post-subtextcolor">"...\UT4UU-v10_1_2\Installer\UT4UU.Installer.GUI.exe"</span></li>
+          </ul>
+
+
+        <p class="card-text mb-1">b. Create a UT4.exe shortcut and add target parameters to it</p>
+        <ul class="card-text mb-0">
+          <li>Navigate to <span class="bg-dark card-body-post-subtextcolor">"C:\Program Files\UnrealTournament\Engine\Binaries\Win64\"</span></li>
+          <li>Right-click <span class="bg-dark card-body-post-subtextcolor">"UE4-Win64-Shipping.exe"</span> and click Send to -> Desktop (create shortcut)</li>
+          <li>Go to your desktop, find your shortcut, and Right-click -> Properties</li>
+          <li class="my-2">
+            Add the following to the end of the "Target:" line:<br>
+            <span class="bg-dark card-body-post-subtextcolor">UnrealTournament -epicapp=UnrealTournamentDev -epicenv=Prod -EpicPortal</span>
+          </li>
+          <li>
+            The entire target line should look like:<br>
+            <span class="bg-dark card-body-post-subtextcolor">"C:\Program Files\UnrealTournament\Engine\Binaries\Win64\UE4-Win64-Shipping.exe" UnrealTournament -epicapp=UnrealTournamentDev -epicenv=Prod -EpicPortal</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 4: Connect to new master server (for online play)</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-3">
+          You must connect to the new master server to enable online play
+        </p>
+        <p class="card-text m-0 p-0">
+          <u>Follow the instructions here:</u>
+        </p>
+        <p class="m-0 p-0 ps-2 mt-1">
+          <a href="howto_masterserver" class="card-body-post-subtextcolor card-body-post-subtitle-link">How to connect to new master server</a>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="container-xl mt-2 text-light" data-bs-theme="dark">
+  <div class="card mb-3 rounded-0 black-shadow">
+    <div class="card-header" id="troubleshooting">Troubleshooting</div>
+    <div class="card-body card-body-post-a">
+      <p class="card-text mb-4">
+        If you are working with a fresh windows installation, or haven't previously installed Epic Games Launcher, you may need to install a couple runtime dependencies for UT4 to work.
+      </p>
+      <p class="card-text m-0 p-0 mb-2">
+        <u>Error 1:</u><br>
+        Error message about missing files related to DirectX when trying to start UT4.<br>
+        On my fresh Win10 install, the error message complained about missing "XINPUT1_3.dll" when trying to start UT4
+      </p>
+      <p class="card-text m-0 p-0 mb-4">
+        <u>Solution:</u><br>
+        Install Microsoft DirectX End-User Runtime - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" class="card-body-post-subtextcolor card-body-post-subtitle-link" target="_blank">(link here)</a>
+      </p>
+      <hr>
+      <p class="card-text m-0 p-0 mb-2">
+        <u>Error 2:</u><br>
+        Error message related to "CorsairRGB" when trying to start UT4.
+      </p>
+      <p class="card-text m-0 p-0">
+        <u>Solution:</u><br>
+        Install Visual C++ Redistributable Packages for Visual Studio 2013 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">(link here)</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script lang="js" src="js/global_vars.js?v=3.0.4"></script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/general.css?v=3.1.5">
+
+  <!-- Navbar header -->
+  <script src="components/header.js" type="text/javascript" defer></script>
+
+  <title>ut4ever.org</title>
+</head>
+<body>
+
+  <!-- Header bar (logo/title and nav bar) -->
+  <header-component></header-component> 
+  
+  <div class="container-xl mt-2 text-light">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Welcome</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text">On January 24th, 2023, Epic shut down their master server and removed access to Unreal Tournament (pre-alpha), aka UT4. <br>
+          Through community efforts, a new master server was created to keep the game alive.<br>
+          Check out the links below for instructions on installing the game and connecting to the new master server.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-xl mt-2 text-light">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Game Setup Links</div>
+      <div class="card-body card-body-post-a">
+        <a href="howto_download" class="link-light card-body-post-subtitle-link"><h6>How to download and install UT4</h6></a>
+        <p class="card-text card-body-post-subtextcolor lh-sm mb-3">Get the game running without Epic Games Launcher</p>
+        
+        <div class="card-body m-0 p-1 border border-light-subtle rounded-2 card-sectiontitle-bgdark mb-1" style="width:fit-content;">
+          <p class="card-text card-body-post-subtextcolor pb-1 ps-1 pe-1">
+            <i class="bi-exclamation-triangle fs-5 px-1"></i>
+            See the troubleshooting section inside for addressing game startup errors related to 
+            <span style="color: rgb(204, 158, 31);">CorsairRGB</span> and 
+            <span style="color: rgb(204, 158, 31);">INPUT1_3.dll / DirectX</span>
+          </p>
+        </div>
+
+        <hr>
+
+        <a href="howto_masterserver" class="link-light card-body-post-subtitle-link"><h6>How to connect to new master server</h6></a>
+        <p class="card-text card-body-post-subtextcolor lh-sm">Modify your existing UT4 game installation to connect to the new master server</p>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container-xl mt-2 text-light">
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Other Links</div>
+      <div class="card-body card-body-post-a">
+        <a href="ut4uu" class="link-light card-body-post-subtitle-link"><h6>UT4UU (Unofficial Patch)</h6></a>
+        <p class="card-text card-body-post-subtextcolor lh-sm">Game patch to include extra features, such as a faster game load time.</p>
+
+        <hr>
+
+        <a href="openal" class="link-light card-body-post-subtitle-link"><h6>3D Spatial Audio (OpenAL)</h6></a>
+        <p class="card-text card-body-post-subtextcolor lh-sm mb-2">An alternative audio module with improvements over stock UT4 audio.</p>
+        <p class="card-text card-body-post-subtextcolor lh-sm">Mainly oriented towards headphone users offering a better 3D spatial audio experience.</p>
+      </div>
+  </div>
+ 
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Global variables to manage URL changes in one location -->
+  <script lang="js" src="js/global_vars.js?v=3.0.4"></script>
+  
+</body>
+</html>
