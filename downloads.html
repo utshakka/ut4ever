@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
@@ -10,51 +10,75 @@
   <link rel="stylesheet" href=
   "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+  <!-- Bootstrap and other style customizations -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/general.css?v=3.1.5">
+  <link rel="stylesheet" href="styles/general.css?v=3.2.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
 
   <!-- Navbar header -->
   <script src="components/header.js" type="text/javascript" defer></script>
 
-  <title>ut4ever.org</title>
+  <title>UT4ever</title>
 </head>
 <body>
   <!-- Header bar (logo/title and nav bar) -->
-  <header-component></header-component> 
-
+  <header-component></header-component>   
   <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+
     <div class="card mb-3 rounded-0 black-shadow">
-      <div class="card-header">UT4 Installer</div>
-      <div class="card-body card-body-post-a">
-        <h6 style="color:rgb(220, 220, 220);">UT4 Installer - v1.0.3</h6>
+
+      <div class="card-header pb-1">
+        <h6 style="color:rgb(220, 220, 220);">Game Installer 
+          <span style="font-weight: 400; color: rgb(200, 200, 200);"><i><small>&nbsp;&nbsp;*recommended installation method</small></i></span>
+        </h6>
+      </div>
+      
+      <div class="card-body card-body-post-a mb-0 pb-0">
+        <h6 style="color:rgb(220, 220, 220);">UT4 Installer - v1.1.0</h6>
         <ul class="mb-0 pb-0 card-body-post-subtextcolor">
           <li><a id="installerUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
             Download link
           </a>
           </li>
         </ul>
-        <p class="card-text pt-3" style="margin-bottom: 0px;">Download, unzip, run UT4_Installer.exe, and follow installer instructions for a simple UT4 installation without epic games launcher.</p> 
-        <p>
-          <a id="installerVideoUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
-            Click here to watch a demo video 
-          </a>
-        </p>
-        <p class="card-text" style="padding-top: 5px; margin-bottom: 0px;"><u>Installer features:</u></p>
-        <ul class="card-text mb-0 pb-0">
-          <li>Preconnected to new master server</li>
-          <li>Preloaded with UT4UU v10.1.6</li>
-          <li>Checks/installs game dependencies normally installed by epic games launcher</li>
-          <li>Creates desktop shortcut with necessary parameters to start game without epic launcher</li>
-          <li>Includes MonkeyPatch v1.0 and Audio Fix v1.1</li>
-        </ul>
-        <p class="card-text" style="padding-top: 20px; margin-bottom: 0px;">Message _shakka on discord to report any bugs</p>
+        <hr class="mb-0 pb-0">
+      </div>
+
+      <div class="accordion accordion-flush" id="accordionInstallerDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button accordion-button-installer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Installer Details
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInstallerDetails">
+            <div class="accordion-body accordion-body-installer">
+
+                <p class="card-text mb-0"><u>Features:</u></p>
+                <ul class="card-text">
+                  <li>Preconnected to new master server</li>
+                  <li>Preloaded with UT4UU</li>
+                  <li>Checks/installs game runtime dependencies normally handled by epic games launcher</li>
+                  <li>Creates desktop shortcut with necessary parameters to start game without epic launcher</li>
+                  <li>Includes MonkeyPatch and Audio Fix</li>
+                  <li>Diagnostic panels for creating a game shortcut and checking master server config</li>
+                </ul>
+
+                <a id="installerVideoUrl" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+                  Click here to watch a demo video 
+                </a>
+
+                <p class="card-text" style="padding-top: 20px; margin-bottom: 0px;">Message _shakka on discord to report any bugs</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
     <div class="card mb-3 rounded-0 black-shadow">
-      <div class="card-header">Game File Downloads</div>
+      <div class="card-header">Stock Game Files</div>
       <div class="card-body card-body-post-a">
         <h6 style="color:rgb(220, 220, 220);">Unreal Tournament 4 (Pre-Alpha)</h6>
         <ul class="mb-0 pb-0 card-body-post-subtextcolor">
@@ -73,15 +97,13 @@
         </ul>
       </div>
     </div>
-  </div>
 
-  
-  <div class="container-xl mt-2 text-light" style="padding-bottom: 325px;" data-bs-theme="dark">
+
     <div class="card mb-3 rounded-0 black-shadow">
       <div id="patches" class="card-header">Patches</div>
       <div class="card-body card-body-post-a">
         <p class="card-text mb-1"><b>Issue: </b>Can't change audio source in game / have to restart UT4 to get sound to work</p>
-        <p class="card-text mt-2 mb-2"><b>Solution: </b>Patch to detect audio output source changes while UT4 is running</p>
+        <p class="card-text mt-2 mb-2"><b>Solution: </b>Install AudioFix patch</p>
 
         <ul class="mb-0 pb-0 card-body-post-subtextcolor">
           <li><a class="card-body-post-subtextcolor card-body-post-subtitle-link" href="https://downloads.ut4ever.box.ca/game%20files/UT4-Patches-1.1.zip">
@@ -89,10 +111,6 @@
           </a>
           </li>
         </ul>
-
-        <p class="card-text card-body-post-subtextcolor pb-0 mb-0 ps-1 pe-1 pt-3">
-          v1.1 includes performance tweak to limit number of audio threads.  Stock game code spawns an excessive 1 thread per core.
-        </p>
 
         <p class="card-text" style="padding-top: 15px; margin-bottom: 0px;"><u>Instructions:</u></p>
         <ul class="card-text mb-0 pb-0">
@@ -105,7 +123,7 @@
 
         <hr>
         <p class="card-text mb-1"><b>Issue: </b>Game occassionally crashes on map change</p>
-        <p class="card-text mt-2 mb-2"><b>Solution 1 (More Robust): </b>Patch that fixes nav collision data issues when loading a map containing an asset without cooked nav collision data</p>
+        <p class="card-text mt-2 mb-2"><b>Solution 1 (More Robust): </b>Install MonkeyPatch that fixes nav collision data issues when loading a map containing an asset without cooked nav collision data</p>
 
         <ul class="mb-0 pb-0 card-body-post-subtextcolor">
           <li><a class="card-body-post-subtextcolor card-body-post-subtitle-link" target="_blank" href="https://github.com/aldehir/UT4-MonkeyPatch">
@@ -130,10 +148,12 @@
         </ul>
       </div>
     </div>
+
+    
   </div>
  
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script lang="js" src="js/global_vars.js?v=3.0.4"></script>
+  <script lang="js" src="js/global_vars.js?v=3.2.0"></script>
 
 </body>
 </html>
