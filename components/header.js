@@ -6,9 +6,9 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark border-bottom border-light-subtle" data-bs-theme="dark">
-    <div class="container-sm">
+    <div class="container-sm" style="height:47px;">
 
-      <a class="navbar-brand pe-3 py-2" href="#"><img src="images/utlogo_light.png" style="height:30px; padding-right: 8px;">ut4ever<i>.org</i></a>
+      <p class="navbar-brand py-0 my-0"><a href="index"><img id="brand_image" src="images/site-logo.png" style="height:37px; padding-right: 0px;"></a></p>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,6 +27,9 @@ class Header extends HTMLElement {
           <li class="nav-item">
             <a class="nav-link" href="downloads">Downloads</a>
           </li>
+          <li class="nav-item ps-2">
+          <a class="nav-link" href="troubleshooting">Troubleshooting</a>
+          </li>          
           <!--
           <li class="nav-item">
             <a class="nav-link" href="discords.html">Discords</a>
