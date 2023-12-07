@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <!-- Bootstrap and other style customizations -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/general.css?v=3.2.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+
+  <!-- Navbar header -->
+  <script src="components/header.js" type="text/javascript" defer></script>
+
+  <title>UT4ever</title>
+</head>
+
+<body style="padding-bottom: 300px;">
+
+  <!-- Header bar (logo/title and nav bar) -->
+  <header-component></header-component> 
+
+  <!--
+    Main section, how to download and install UT4
+    Table of contents included in this card
+  -->
+  <div class="container-sm mt-2 text-light" data-bs-theme="dark">
+
+    <div class="card mb-3 rounded-0 black-shadow">
+
+      <div class="card-header pb-1"><h6 style="color:rgb(220, 220, 220);">UT4 Installer</h6></div>      
+
+      <div class="accordion accordion-flush" id="accordionInstallerDetails">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button accordion-button-installer collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Installer Details
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInstallerDetails">
+            <div class="accordion-body accordion-body-installer">
+
+                <p class="card-text mb-0"><u>Features:</u></p>
+                <ul class="card-text">
+                  <li>Preconnected to new master server</li>
+                  <li>Preloaded with UT4UU</li>
+                  <li>Checks/installs game runtime dependencies normally handled by epic games launcher</li>
+                  <li>Creates desktop shortcut with necessary parameters to start game without epic launcher</li>
+                  <li>Includes MonkeyPatch and Audio Fix</li>
+                  <li>Diagnostic panels for creating a game shortcut and checking master server config</li>
+                </ul>
+
+                <a id="installerVideoUrl" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+                  Click here to watch a demo video 
+                </a>
+
+                <p class="card-text" style="padding-top: 20px; margin-bottom: 0px;">Message _shakka on discord to report any bugs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 1: Download the installer</div>
+      <div class="card-body card-body-post-a">
+        <h6 style="color:rgb(220, 220, 220);">UT4 Installer - v1.1.0</h6>
+        <ul class="mb-0 pb-0 card-body-post-subtextcolor">
+          <li><a id="installerUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+            Download link
+          </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 2: Run the installer</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Unzip and run UT4_Installer.exe</p>
+        <p class="card-text mb-1">b. Select your installation directory and click "Install"</p>
+        <img src="images/installer/installer_screen.png" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 3: Create an account for online play</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Go to <a href="https://ut4.timiimit.com/" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">https://ut4.timiimit.com/</a><br></p>
+        <p class="card-text mb-1">b. Click "Register" and create an account</p>
+        <p class="card-text mb-1">c. Login and click "Get Code"</p>
+        <img src="images/installer/getcode.PNG" class="img-fluid pb-3">
+        <p class="card-text mb-1">d. Copy the Auth Code</p>
+        <img src="images/installer/authcode.png" class="img-fluid">
+      </div>
+    </div>
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 4: Start UT4 and enter your Auth Code</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Use the Unreal Tournament 4 shortcut that the installer created on your desktop</p>
+        <p class="card-text mb-1">b. Paste your copied Auth Code into the "3) Paste authorization code" box</p>        
+        <p class="card-text mb-1">c. Click "Add Account"</p>
+        <img src="images/installer/pasteauth.png" class="img-fluid pb-3" style="max-width: 600px;">
+        <p class="card-text mb-1">d. On this next screen, select your account and click "Use"</p>
+        <img src="images/installer/accntselect.png" class="img-fluid pb-3" style="max-height: 600px;">
+        <p class="card-text mb-1">e. If a UU box pops up, you can either just click "apply", or browse through the tabs to see the extra 
+          features that UU adds to the game
+        </p>
+        <img src="images/installer/uu.png" class="img-fluid" style="max-width: 600px;">
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script lang="js" src="js/global_vars.js?v=3.2.0"></script>
+
+</body>
+</html>

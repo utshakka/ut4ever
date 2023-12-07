@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- Bootstrap Font Icon CSS -->
+  <link rel="stylesheet" href=
+  "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <!-- Bootstrap and other style customizations -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/general.css?v=3.2.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+
+  <!-- Navbar header -->
+  <script src="components/header.js" type="text/javascript" defer></script>
+
+  <title>UT4ever</title>
+</head>
+
+<body style="padding-bottom: 300px;">
+
+  <!-- Header bar (logo/title and nav bar) -->
+  <header-component></header-component> 
+
+  <!--
+    Main section, how to download and install UT4
+    Table of contents included in this card
+  -->
+  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header pb-1 border-bottom-0"><h6 style="color:rgb(220, 220, 220);">Troubleshooting</h6></div>
+    </div>
+
+
+  <div class="card mb-3 rounded-0 black-shadow">
+    <div class="card-header" id="troubleshooting">Game Startup Errors</div>
+    <div class="card-body card-body-post-a">
+      <p href="startup_error1" class="card-text m-0 p-0 mb-2">
+        <u>Error 1:</u><br>
+        Error message mentioning <span style="color: rgb(204, 158, 31);">CorsairRGB</span> when trying to start UT4.
+      </p>
+      <p class="card-text m-0 p-0">
+        <u>Solution:</u><br>
+        Install Visual C++ Redistributable Packages for Visual Studio 2013 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">(link here)</a>
+      </p>
+
+      <hr>
+
+      <p href="startup_error2" class="card-text m-0 p-0 mb-2">
+        <u>Error 2:</u><br>
+        Error message mentioning <span style="color: rgb(204, 158, 31);">INPUT1_3.dll / DirectX</span> when trying to start UT4.<br>
+      </p>
+      <p class="card-text m-0 p-0 mb-0">
+        <u>Solution:</u><br>
+        Install Microsoft DirectX End-User Runtime - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" class="card-body-post-subtextcolor card-body-post-subtitle-link" target="_blank">(link here)</a>
+      </p>     
+
+    </div>
+  </div>
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script lang="js" src="js/global_vars.js?v=3.2.0"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
@@ -10,13 +10,17 @@
   <link rel="stylesheet" href=
   "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
+  <!-- Bootstrap and other style customizations -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/general.css?v=3.1.5">
-  
+  <link rel="stylesheet" href="styles/general.css?v=3.2.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
+
   <!-- Navbar header -->
   <script src="components/header.js" type="text/javascript" defer></script>
 
-  <title>ut4ever.org</title>
+  <title>UT4ever</title>
 </head>
 
 <body style="padding-bottom: 300px;">
@@ -31,41 +35,22 @@
   <div class="container-xl mt-2 text-light" data-bs-theme="dark">
 
     <div class="card mb-3 rounded-0 black-shadow">
-      <div class="card-header pb-1"><h6 style="color:rgb(220, 220, 220);">How to download and install UT4</h6></div>
-
-      <!--Troubleshooting warning-->
-      <div class="card-body card-body-post-a p-2 pb-1">        
-        <div class="card-body m-0 p-1 border border-light-subtle rounded-2 card-sectiontitle-bgdark mb-1" style="width:fit-content;">
-          <p class="card-text card-body-post-subtextcolor pb-1 ps-1 pe-1">
-            <i class="bi-exclamation-triangle fs-5 px-1"></i>
-            See the troubleshooting section at the bottom for addressing game startup errors related to 
-            <span style="color: rgb(204, 158, 31);">CorsairRGB</span> and 
-            <span style="color: rgb(204, 158, 31);">INPUT1_3.dll / DirectX</span>
-          </p>
-        </div>
-      </div>
+      <div class="card-header pb-1 border-bottom-0"><h6 style="color:rgb(220, 220, 220);">How to download and manually install UT4</h6></div>
     </div>
-  </div>
 
-  
-  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
     <div class="card mb-3 rounded-0 black-shadow">
-      <div class="card-header">Step 1: Download game files</div>
+      <div class="card-header">Step 1: Download stock game files</div>
       <div class="card-body card-body-post-a">
-        <p class="card-text mb-1">a. Download UnrealTournament.zip</p>
-        <ul class="mb-0">
-          <li style="padding-top: 5px" class="card-text pb-2">Try out the UT4 installer! - <a href="downloads" class="card-body-post-subtextcolor card-body-post-subtitle-link">
-            More info here</a></li>
-          <li class="card-text">or <a id="stockGameUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
-                    click here for a download link
-                </a> that requires manual installation
+        <h6 style="color:rgb(220, 220, 220);">UnrealTournament.zip</h6>
+        <ul class="mb-0 pb-0 card-body-post-subtextcolor">
+          <li><a id="stockGameUrl" class="card-body-post-subtextcolor card-body-post-subtitle-link">
+            Download link
+          </a>
           </li>
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
     <div class="card mb-3 rounded-0 black-shadow">
       <div class="card-header">Step 2: Install the game</div>
       <div class="card-body card-body-post-a">
@@ -76,9 +61,7 @@
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
     <div class="card mb-3 rounded-0 black-shadow">
       <div class="card-header">Step 3: Bypass Epic Games Launcher</div>
       <div class="card-body card-body-post-a">
@@ -110,58 +93,59 @@
         </ul>
       </div>
     </div>
-  </div>
 
-  <div class="container-xl mt-2 text-light" data-bs-theme="dark">
     <div class="card mb-3 rounded-0 black-shadow">
       <div class="card-header">Step 4: Connect to new master server (for online play)</div>
       <div class="card-body card-body-post-a">
-        <p class="card-text mb-3">
-          You must connect to the new master server to enable online play
+        <p class="card-text mb-3">You must connect to the new master server and create an account on it to be able to play UT4 online.</p>
+        <p class="card-text mb-0">
+          <u>If you have UT4UU installed:</u>
         </p>
-        <p class="card-text m-0 p-0">
-          <u>Follow the instructions here:</u>
+        <p class="card-text mb-3 ps-2 mt-0 lh-lg">
+          <a id="masterServerUuInstructionsUrl" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">Text instructions to connect with UT4UU</a><br>
+          <a id="masterServerUuVideoUrl" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">Video instructions to connect with UT4UU</a>
         </p>
-        <p class="m-0 p-0 ps-2 mt-1">
-          <a href="howto_masterserver" class="card-body-post-subtextcolor card-body-post-subtitle-link">How to connect to new master server</a>
+
+        <p class="card-text mb-0">
+          <u>If you do NOT have UT4UU installed:</u>
         </p>
+        <p class="card-text mb-0 ps-2 mt-0 lh-lg">
+          <a id="masterServerStockInstructionsUrl" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">Text instructions to connect without UT4UU</a><br>
+        </p>
+      </div>
     </div>
-  </div>
-</div>
 
-<div class="container-xl mt-2 text-light" data-bs-theme="dark">
-  <div class="card mb-3 rounded-0 black-shadow">
-    <div class="card-header" id="troubleshooting">Troubleshooting</div>
-    <div class="card-body card-body-post-a">
-      <p class="card-text mb-4">
-        If you are working with a fresh windows installation, or haven't previously installed Epic Games Launcher, you may need to install a couple runtime dependencies for UT4 to work.
-      </p>
-      <p class="card-text m-0 p-0 mb-2">
-        <u>Error 1:</u><br>
-        Error message about missing files related to DirectX when trying to start UT4.<br>
-        On my fresh Win10 install, the error message complained about missing "XINPUT1_3.dll" when trying to start UT4
-      </p>
-      <p class="card-text m-0 p-0 mb-4">
-        <u>Solution:</u><br>
-        Install Microsoft DirectX End-User Runtime - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" class="card-body-post-subtextcolor card-body-post-subtitle-link" target="_blank">(link here)</a>
-      </p>
-      <hr>
-      <p class="card-text m-0 p-0 mb-2">
-        <u>Error 2:</u><br>
-        Error message related to "CorsairRGB" when trying to start UT4.
-      </p>
-      <p class="card-text m-0 p-0">
-        <u>Solution:</u><br>
-        Install Visual C++ Redistributable Packages for Visual Studio 2013 - <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">(link here)</a>
-      </p>
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header" id="troubleshooting">Troubleshooting</div>
+      <div class="card-body card-body-post-a">        
+
+        <div class="card-body m-0 p-1 border border-light-subtle rounded-2 card-sectiontitle-bgdark mb-1" style="width:fit-content;">
+          <p class="card-text card-body-post-subtextcolor pb-1 ps-1 pe-1">
+            <i class="bi-exclamation-triangle fs-5 px-1"></i>
+            Game startup errors mentioning <span style="color: rgb(204, 158, 31);">CorsairRGB</span>
+            means you need to install Visual C++ Redistributable Packages for Visual Studio 2013 - 
+            <a href="https://www.microsoft.com/en-us/download/details.aspx?id=40784" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">(link here)</a>
+          </p>
+        </div>
+
+        <div class="card-body m-0 p-1 border border-light-subtle rounded-2 card-sectiontitle-bgdark mb-1" style="width:fit-content;">
+          <p class="card-text card-body-post-subtextcolor pb-1 ps-1 pe-1">
+            <i class="bi-exclamation-triangle fs-5 px-1"></i>
+            Game startup errors mentioning <span style="color: rgb(204, 158, 31);">INPUT1_3.dll / DirectX</span>
+            means you need to install Microsoft DirectX End-User Runtime - 
+            <a href="https://www.microsoft.com/en-us/download/details.aspx?id=35" class="card-body-post-subtextcolor card-body-post-subtitle-link" target="_blank">(link here)</a>
+          </p>
+        </div>
+
+        <p class="card-text pt-2">For more troubleshooting, <a href="troubleshooting" class="card-body-post-subtitle-link">click here</a></p>
+
+      </div>
     </div>
+
   </div>
-</div>
-
-
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script lang="js" src="js/global_vars.js?v=3.0.4"></script>
+  <script lang="js" src="js/global_vars.js?v=3.2.0"></script>
 
 </body>
 </html>
