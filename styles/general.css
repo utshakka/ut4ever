@@ -49,6 +49,7 @@ card header bg
 }
 .card-body-post-subtitle-link:hover {
   text-decoration: underline;
+  text-decoration-color: rgb(66, 153, 212);
   text-underline-offset: 3px;
 }
 .card-text {
@@ -67,6 +68,20 @@ card header bg
 h6, .card-body-post-subtitle-link {
   color:rgb(66, 153, 212);
 }
+
+
+.accordion-button-installer {
+  background-color: rgb(54, 57, 63);
+  color: rgb(210, 210, 210);
+}
+.accordion-body-installer {
+  background-color: rgb(54, 57, 63);
+}
+.accordion-button:not(.collapsed) {
+  color: rgb(210, 210, 210);
+  background-color: rgb(54, 57, 63);
+}
+
 
 .nav-link {
   font-weight: 500;
