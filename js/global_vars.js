@@ -1,7 +1,7 @@
 // This wrapping stuff is called an IIFE, just makes it run immediately
 (() => {
   // URLs used across multiple pages
-  var _installerUrl = 'https://downloads.ut4ever.box.ca/game%20files/UT4%20Installer%20-%20v1.0.3.zip';
+  var _installerUrl = 'https://downloads.ut4ever.box.ca/game%20files/UT4%20Installer%20-%20v1.1.0.zip';
   var _installerVideoUrl = 'https://www.youtube.com/watch?v=uPOS3832ssk';
   var _stockGameUrl = 'https://downloads.ut4ever.box.ca/game files/UT4.zip';
   var _stockEditorUrl = 'https://downloads.ut4ever.box.ca/game%20files/UnrealTournamentEditor.zip';
