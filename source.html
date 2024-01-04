@@ -23,8 +23,7 @@
   <title>UT4ever</title>
 </head>
 
-
-<body>
+<body style="padding-bottom: 300px;">
 
   <!-- Header bar (logo/title and nav bar) -->
   <header-component></header-component> 
@@ -34,26 +33,30 @@
     Table of contents included in this card
   -->
   <div class="container-xl mt-2 text-light" data-bs-theme="dark">
+
     <div class="card mb-3 rounded-0 black-shadow">
-        <div class="card-header mb-0 pb-2">
-            3D Spatial Audio (OpenAL)
-        </div>
-        <div class="card-body card-body-post-a">
-            <p class="card-text mb-3">An alternative audio module with improvements over stock UT4 audio.</p>
-            <p class="card-text mb-0">Mainly oriented towards headphone users offering a better 3D spatial audio experience.</p>
-            <hr>
-                <p class="card-text mb-2"><a href="https://github.com/main-exe/UT4-OpenAL/releases" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">UT4-OpenAL GitHub Releases</a>
-                </p>
-                <p class="card-text mb-0">
-                    <a href="https://github.com/main-exe/UT4-OpenAL/" target="_blank" class="card-body-post-subtextcolor card-body-post-subtitle-link">UT4-OpenAL GitHub Main Page</a>
-                </p>
-            </div>
-        </div>
+      <div class="card-header pb-1 border-bottom-0"><h6 style="color:rgb(220, 220, 220);">Source code</h6></div>
+
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-4">Source folders are built and functional in VS2015-2017</p>
+        <h6><a class="card-body-post-subtextcolor card-body-post-subtitle-link" id="sourceCleanMaster">UnrealTournament-clean-master.zip</a></h6>
+        <ul class="mb-0 pb-0 card-text">
+          <li>Built with UE4.15, but missing assets for ammos, LG, and Keg
+          </li>
+        </ul>
+        <hr>
+        <h6><a class="card-body-post-subtextcolor card-body-post-subtitle-link" id="sourceRelease">UnrealTournament-release.zip</a></h6>
+        <ul class="mb-0 pb-0 card-text">
+          <li>Built with UE4.15 and contains all assets
+          </li>
+        </ul>
+      </div>
     </div>
 
+  </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script lang="js" src="js/global_vars.js?v=3.2.2"></script>
-  
+
 </body>
 </html>
