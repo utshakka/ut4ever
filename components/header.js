@@ -29,7 +29,10 @@ class Header extends HTMLElement {
           </li>
           <li class="nav-item ps-2">
           <a class="nav-link" href="troubleshooting">Troubleshooting</a>
-          </li>          
+          </li>
+          <li class="nav-item ps-2">
+          <a class="nav-link" href="server_setup">Server Setup</a>
+          </li>                    
           <!--
           <li class="nav-item">
             <a class="nav-link" href="discords.html">Discords</a>
