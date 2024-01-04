@@ -11,9 +11,11 @@
   var _masterServerUuInstructionsUrl = 'https://ut4.timiimit.com/Instructions/UT4UU';
   var _masterServerStockInstructionsUrl = 'https://ut4.timiimit.com/Instructions/StockUT4';
   var _masterServerStockVideoUrl = '';
+  var _hubGuideUrl = 'https://downloads.ut4ever.box.ca/server/HubGuide.pdf';
 
   const urlArray = ['installerUrl', 'installerVideoUrl', 'stockGameUrl', 'stockEditorUrl',
-                    'latestUuUrl', 'masterServerUuVideoUrl', 'masterServerUuInstructionsUrl', 'masterServerStockInstructionsUrl', 'masterServerStockVideoUrl'];
+                    'latestUuUrl', 'masterServerUuVideoUrl', 'masterServerUuInstructionsUrl', 'masterServerStockInstructionsUrl', 'masterServerStockVideoUrl',
+                    'hubGuideUrl'];
   const textArray = ['latestUuVersion'];
 
   urlArray.forEach(insertURLToHTML);
