@@ -12,10 +12,12 @@
   var _masterServerStockInstructionsUrl = 'https://ut4.timiimit.com/Instructions/StockUT4';
   var _masterServerStockVideoUrl = '';
   var _hubGuideUrl = 'https://downloads.ut4ever.box.ca/server/HubGuide.pdf';
+  var _sourceCleanMaster = 'https://downloads.ut4ever.box.ca/source/UnrealTournament-clean-master.zip';
+  var _sourceRelease = 'https://downloads.ut4ever.box.ca/source/UnrealTournament-release.zip';
 
   const urlArray = ['installerUrl', 'installerVideoUrl', 'stockGameUrl', 'stockEditorUrl',
                     'latestUuUrl', 'masterServerUuVideoUrl', 'masterServerUuInstructionsUrl', 'masterServerStockInstructionsUrl', 'masterServerStockVideoUrl',
-                    'hubGuideUrl'];
+                    'hubGuideUrl', 'sourceCleanMaster', 'sourceRelease'];
   const textArray = ['latestUuVersion'];
 
   urlArray.forEach(insertURLToHTML);
