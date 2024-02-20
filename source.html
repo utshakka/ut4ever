@@ -12,7 +12,7 @@
 
   <!-- Bootstrap and other style customizations -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles/general.css?v=3.2.3">
+  <link rel="stylesheet" href="styles/general.css?v=3.2.4">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/images/favicon-16x16.png">
@@ -45,7 +45,10 @@
           </li>
         </ul>
         <hr>
-        <h6><a class="card-body-post-subtextcolor card-body-post-subtitle-link" id="sourceRelease">UnrealTournament-release.zip</a></h6>
+        <h6>
+          <a class="card-body-post-subtextcolor card-body-post-subtitle-link" id="sourceRelease">UnrealTournament-release.zip</a>
+          <span style="font-weight: 400; color: rgb(200, 200, 200);"><i><small>&nbsp;&nbsp;*recommended</small></i></span>
+        </h6>
         <ul class="mb-0 pb-0 card-text">
           <li>Built with UE4.15 and contains all assets
           </li>
@@ -53,10 +56,62 @@
       </div>
     </div>
 
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header pb-1 border-bottom-0"><h6 style="color:rgb(220, 220, 220);">Building the source</h6></div>
+
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-2"><u>Packages required:</u></p>
+        <ul class="mb-0 pb-0 card-text">
+          <li>Visual Studio (Community 2022) Installer - 
+            <a href="https://downloads.ut4ever.box.ca/source/VisualStudioSetup.exe">(local mirror)</a> - 
+            <a target="_blank" href="https://visualstudio.microsoft.com/vs/community/">(official site)</a></li>
+          <li>Windows SDK 8.1 - 
+            <a href="https://downloads.ut4ever.box.ca/source/sdksetup.exe">(local mirror)</a> - 
+            <a target="_blank" href="https://developer.microsoft.com/en-us/windows/downloads/sdk-archive/">(official site)</a></li>
+          <li>Visual C++ Redistributable Packages for Visual Studio 2013 - 
+            <a href="https://downloads.ut4ever.box.ca/source/vcredist_x64.exe">(local mirror)</a> - 
+            <a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=40784">(official site)</a></li>
+          <li>Microsoft DirectX End-User Runtime - 
+            <a href="https://downloads.ut4ever.box.ca/source/directx_Jun2010_redist.exe">(local mirror)</a> - 
+            <a target="_blank" href="https://www.microsoft.com/en-us/download/details.aspx?id=35">(official site)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 1: Install Visual Studio Community 2022 + Addon tools + MVSC 2015</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Install VS Community 2022 using the VisualStudioSetup.exe</p>
+        <p class="card-text mb-1">b. Open the UE4.sln found in the root of the UT source code folder</p>
+        <p class="card-text mb-1">c. VS should suggest some addon frameworks and tools to install - install these</p>
+        <img src="images/source/install_vspackages.png" class="img-fluid">
+        <img src="images/source/install_vspackages2.png" class="img-fluid pb-3">
+        <p class="card-text mb-1">d. Close VS</p>
+        <p class="card-text mb-1">e. Run VisualStudioSetup.exe and install the MVSC VS 2015 package</p>
+        <img src="images/source/install_mvsc2015.png" class="img-fluid">
+      </div>
+    </div>
+  
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 2: Install other dependencies</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">a. Install Windows SDK 8.1</p>
+        <p class="card-text mb-1">b. Install Visual C++ Redistributable Packages for Visual Studio 2013</p>
+        <p class="card-text mb-1">c. Microsoft DirectX End-User Runtime</p>
+      </div>
+    </div>
+
+    <div class="card mb-3 rounded-0 black-shadow">
+      <div class="card-header">Step 3: Build UE4.sln</div>
+      <div class="card-body card-body-post-a">
+        <p class="card-text mb-1">Building the UE and UT sources should work now</p>
+      </div>
+    </div>
+
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script lang="js" src="js/global_vars.js?v=3.2.3"></script>
+  <script lang="js" src="js/global_vars.js?v=3.2.4"></script>
 
 </body>
 </html>
